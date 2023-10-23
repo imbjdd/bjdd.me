@@ -16,6 +16,7 @@ return (
         <div className="links">
             <p><Link href="/about">About</Link></p>
             <p><Link href="/now">Now</Link></p>
+            <p><Link href="/diary">Diary</Link></p>
             <p><Link href="/readinglist">Reading List</Link></p>
         </div>
     </nav>
