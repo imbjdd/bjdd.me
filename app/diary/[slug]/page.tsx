@@ -4,7 +4,8 @@ import { readdirSync, readFileSync } from 'fs'
 import { Marked } from '@ts-stack/markdown'
 
 async function getData(slug:string) {
-  const n: number = readdirSync(process.cwd() + '/diary').length
+  const n: number = readdirSync(process.cwd() + '/diary').filter(element => element.split('.')[element.split('.').length-1] === 'md').length
+
   const list_n = Array.from({length: n}, (_, i) => i + 1)
   if(!list_n.includes(parseInt(slug))) return ['0', 'Not found OwO', '']
 

@@ -4,7 +4,7 @@ import { readdirSync, readFileSync } from 'fs'
 import { parse, stringify } from 'yaml'
 
 async function getData() {
-    const n: number = readdirSync(process.cwd() + '/diary').length
+    const n: number = readdirSync(process.cwd() + '/diary').filter(element => element.split('.')[element.split('.').length-1] === 'md').length
 
     const files = []
 
