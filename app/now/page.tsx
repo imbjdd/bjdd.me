@@ -20,16 +20,16 @@ return (
           <p><Link href="/readinglist">Reading List</Link></p>
       </div>
   </nav>
-    <h1>/Now</h1>
+    <h1 className="font-black">/Now</h1>
 </section>
 
 <div className="main top">
-<h2>
+<h2 className="font-bold">
     What I&apos;m doing now
 </h2>
 <p>I live in Paris 75005, France.</p>
 
-<h3>Work</h3>
+<h3 className="font-medium">Work</h3>
 <p>I&apos;m working on my start-up and learning React Native.</p>
 
 <h3>Study</h3>

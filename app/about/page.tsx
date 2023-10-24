@@ -20,13 +20,13 @@ return (
             <p><Link href="/readinglist">Reading List</Link></p>
         </div>
     </nav>
-    <h1>/About</h1>
+    <h1 className="font-black">/About</h1>
 </section>
 
 <div className="main top">
-    <h2>Contact information</h2>
+    <h2 className="font-bold">Contact information</h2>
     <p>Email : hello11111111111at11111111bjdd.me (without character 1)</p>
-    <h3>PGP KEY</h3>
+    <h3 className="font-medium">PGP KEY</h3>
     <div className="code">
     <div id="pgp-key"><pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
 

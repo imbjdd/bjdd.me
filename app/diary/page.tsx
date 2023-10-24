@@ -36,7 +36,7 @@ return (
           <p><Link href="/readinglist">Reading List</Link></p>
       </div>
   </nav>
-    <h1>/Diary</h1>
+    <h1 className="font-black">/Diary</h1>
 </section>
 
 

@@ -86,19 +86,19 @@ return (
           <p><Link href="/readinglist">Reading List</Link></p>
       </div>
   </nav>
-    <h1>/Reading_List</h1>
+    <h1 className="font-black">/Reading_List</h1>
 </section>
 
 
 <div className="main top readinglist">
-<h2>Books I want to read</h2>
+<h2 className="font-bold">Books I want to read</h2>
 <ul className="border-black">
 {to_read.map((book: Book) => (
 <li key={book.id}><i>{book.title}</i>, {book.author}</li>
 ))}
 </ul>
 
-<h2>Books I&apos;ve read</h2>
+<h2 className="font-bold">Books I&apos;ve read</h2>
 
 {years.map((year:number) => (
 <>
