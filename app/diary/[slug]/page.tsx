@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import { readdirSync, readFileSync } from 'fs'
 import { Marked } from '@ts-stack/markdown'
@@ -25,26 +25,14 @@ const data: Array<string> = await getData(slug)
 
 return (
 <>
-<section className="header top">
-  <nav>
-      <Link href="/">
-      <div className="logo">
-          <p>Salim</p>
-      </div>
-      </Link>
-      <div className="links">
-          <p><Link href="/about">About</Link></p>
-          <p><Link href="/now">Now</Link></p>
-          <p><Link href="/diary">Diary</Link></p>
-          <p><Link href="/readinglist">Reading List</Link></p>
-      </div>
-  </nav>
+<section className="header pouet">
+    <Navbar />
     <h1 className="font-black">/Diary_{data[0]} - {data[1]}</h1>
 </section>
 
 
 <div className="main top readinglist">
-<article className="prose lg:prose-xl">
+<article className="prose lg:prose-md">
 <div className="text-container" dangerouslySetInnerHTML={{ __html: Marked.parse(data[2]) }} />
 </article>
 </div>

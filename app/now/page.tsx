@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 
 export default function Now() {
@@ -6,21 +6,9 @@ export default function Now() {
 
 return (
 <>
-<section className="header top">
-  <nav>
-      <Link href="/">
-      <div className="logo">
-          <p>Salim</p>
-      </div>
-      </Link>
-      <div className="links">
-          <p><Link href="/about">About</Link></p>
-          <p><Link href="/now">Now</Link></p>
-          <p><Link href="/diary">Diary</Link></p>
-          <p><Link href="/readinglist">Reading List</Link></p>
-      </div>
-  </nav>
-    <h1 className="font-black">/Now</h1>
+<section className="pouet">
+<Navbar />
+<h1 className="font-black">/Now</h1>
 </section>
 
 <div className="main top">

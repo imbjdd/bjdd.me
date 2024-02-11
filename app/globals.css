@@ -15,19 +15,28 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
  body {
    font-family: 'Montagu Slab', serif;
-   font-size: 16px;
    color: #303d38;
    width: 100vw;
    min-height: 100vh;
    background: #f9f9f9;
 }
+.pouet {
+  padding: 0 16px;
+  padding-top: calc(47vh * 100 / 900);
+}
+
+@media only screen and (min-width: 992px) {
+  .pouet {
+    padding: 0 calc(205vw * 100 / 1440);
+    padding-top: calc(47vh * 100 / 900);
+ }
+}
  .top {
    padding: 0 16px;
-   padding-top: calc(47vh * 100 / 900);
 }
+
  @media only screen and (min-width: 992px) {
    .top {
      padding: 0 calc(205vw * 100 / 1440);
@@ -50,11 +59,13 @@
  nav {
    width: 100%;
 }
- @media only screen and (min-width: 992px) {
-   nav {
-     height: calc(20vh * 100 / 900);
-     font-size: calc(16vw * 100 / 1440);
-  }
+.grow {
+  flex-grow: 1;
+}
+@media only screen and (min-width: 992px) {
+  nav {
+    display: flex;
+ }
 }
  nav .logo {
    position: relative;
@@ -62,21 +73,10 @@
 }
  @media only screen and (min-width: 992px) {
    nav .logo {
-     float: left;
   }
 }
  nav .logo svg {
    display: none;
-}
- @media only screen and (min-width: 992px) {
-   nav .logo svg {
-     display: block;
-     float: left;
-     top: 0;
-     left: 0;
-     transform: translateY(-35%) translateX(-25%);
-     width: 200%;
-  }
 }
  nav .logo p {
    font-weight: 700;
@@ -92,7 +92,6 @@
 }
  @media only screen and (min-width: 992px) {
    nav .links {
-     float: right;
   }
 }
  .hero {
@@ -119,47 +118,29 @@
   }
 }
  .hero .content .picture {
-   animation: opIn 1s;
-   transition-timing-function: ease;
    flex-shrink: 0;
-   filter: drop-shadow(10px 30px 1px rgba(252, 227, 5, 0.6));
-   padding-top: 70px;
-   padding-bottom: 100px;
    display: flex;
-   width: 100%;
    justify-content: center;
-}
- @media only screen and (min-width: 992px) {
-   .hero .content .picture {
-     width: calc(250vw * 100 / 1440);
-     position: relative;
-     filter: drop-shadow(30px 50px 1px rgba(252, 227, 5, 0.6));
-     animation: opInDesk 0.5s;
-  }
+   margin: 50px 0;
 }
  .hero .content .picture img {
-   width: 200px;
    border-radius: 5px;
 }
  @media only screen and (min-width: 992px) {
-   .hero .content .picture img {
+   .hero .content .picture {
      margin: 0;
-     position: absolute;
-     top: 50%;
-     width: calc(210vw * 100/1440);
-     -ms-transform: translateY(-50%);
-     transform: translateY(-50%);
-  }
+      }
 }
  @media only screen and (min-width: 992px) {
    .hero .content .main-c {
      padding-left: calc(60vw * 100/1440);
+     height: fit-content;
   }
 }
  .hero .content .main-c div {
    transition-timing-function: ease;
    opacity: 0;
-   animation: fadeIn 1s forwards;
+   animation: fadeIn 0.5s forwards;
    animation-delay: 0.5s;
 }
  .hero .content .main-c img {
@@ -171,37 +152,13 @@
      width: calc(64vw * 100 / 1440);
   }
 }
- .hero .content .main-c h1 {
-   font-size: 40px;
-   font-weight: 500;
-   margin-right: 9.5px;
-}
- @media only screen and (min-width: 992px) {
-   .hero .content .main-c h1 {
-     font-size: calc(64vw * 100 / 1440);
-  }
-}
  .hero .content .main-c p {
    transition-timing-function: ease;
    opacity: 0;
-   animation: fadeIn 1s forwards;
-   animation-delay: 1s;
+   animation: fadeIn 0.9s forwards;
+   animation-delay: 0.5s;
    font-weight: 400;
    padding-top: 10px;
-   font-size: 16;
-}
- @media only screen and (min-width: 992px) {
-   .hero .content .main-c p {
-     font-size: calc(16vw * 100 / 1440);
-  }
-}
- .hero .content .main-c svg {
-   transition-timing-function: ease;
-   opacity: 0;
-   animation: fadeIn 1s forwards;
-   animation-delay: 1s;
-   width: 100%;
-   height: auto;
 }
  @media only screen and (min-width: 992px) {
    .hero .content .main-c .cta {
@@ -217,7 +174,6 @@
 }
  @media only screen and (min-width: 992px) {
    .hero .content .main-c .cta button {
-     font-size: calc(16vw * 100 / 1440);
      padding: calc(15vh * 100/900) calc(75vw * 100/1440);
      height: auto;
   }
@@ -242,32 +198,16 @@
  .main {
    padding-bottom: calc(47vh * 100 / 900);
 }
+@media only screen and (min-width: 992px) {
+  .main {
+    padding: 0 calc(205vw * 100 / 1440)
+  }
+}
  .main p, .main h1, .main h2, .main h3 {
    padding-top: 10px;
    color: #333;
    font-family: 'Roboto', sans-serif;
    line-height: 28px;
-}
-
- .main h2 {
-   font-size: 32px;
-}
- .main h3 {
-   font-size: 24px;
-}
- .header {
-   background: #fce305;
-   border-bottom: 0.5rem solid #fce305;
-}
- .header h1 {
-   margin-top: 40px;
-   font-size: 40px;
-   margin: 50px 0;
-}
- @media only screen and (min-width: 992px) {
-   .header h1 {
-     font-size: calc(64vw * 100 / 1440);
-  }
 }
  .code {
    margin-top: 16px;
@@ -301,20 +241,21 @@
      opacity: 1;
   }
 }
- @keyframes opInDesk {
-   0% {
-     filter: drop-shadow(0px 0px 1px rgba(252, 227, 5, 0.2));
-  }
-   100% {
-     filter: drop-shadow(30px 50px 1px rgba(252, 227, 5, 0.6));
-  }
+h1, h2, h3, h4, h5, h6, p {
+  font-size: revert;
+} 
+h1 {
+  font-size: 32px;
 }
- @keyframes opIn {
-   0% {
-     filter: drop-shadow(0px 0px 1px rgba(252, 227, 5, 0.2));
-  }
-   100% {
-     filter: drop-shadow(10px 30px 1px rgba(252, 227, 5, 0.6));
-  }
+.pouet h1 {
+  margin: 20px 0;
 }
- 
+@media only screen and (min-width: 992px) {
+  .pouet h1 {
+    margin: 50px 0;
+ }
+}
+.vertical-align {
+  margin: auto 0;
+  align-items: center
+}

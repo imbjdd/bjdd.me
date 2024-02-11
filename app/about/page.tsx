@@ -1,25 +1,10 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Navbar from '@/components/Navbar'
 
 export default function About() {
-
-
 return (
 <>
-<section className="header top">
-    <nav>
-        <Link href="/">
-        <div className="logo">
-            <p>Salim</p>
-        </div>
-        </Link>
-        <div className="links">
-            <p><Link href="/about">About</Link></p>
-            <p><Link href="/now">Now</Link></p>
-            <p><Link href="/diary">Diary</Link></p>
-            <p><Link href="/readinglist">Reading List</Link></p>
-        </div>
-    </nav>
+<section className="header pouet">
+    <Navbar />
     <h1 className="font-black">/About</h1>
 </section>
 

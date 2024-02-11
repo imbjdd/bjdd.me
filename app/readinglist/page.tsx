@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import {readFileSync} from 'fs'
 import { parse, stringify } from 'yaml'
@@ -72,20 +72,8 @@ const to_read = oui.to_read
 
 return (
 <>
-<section className="header top">
-  <nav>
-      <Link href="/">
-      <div className="logo">
-          <p>Salim</p>
-      </div>
-      </Link>
-      <div className="links">
-          <p><Link href="/about">About</Link></p>
-          <p><Link href="/now">Now</Link></p>
-          <p><Link href="/diary">Diary</Link></p>
-          <p><Link href="/readinglist">Reading List</Link></p>
-      </div>
-  </nav>
+<section className="header pouet">
+    <Navbar />
     <h1 className="font-black">/Reading_List</h1>
 </section>
 
