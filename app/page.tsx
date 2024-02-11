@@ -13,7 +13,7 @@ return (
         <div className="flex items-center">
           <h1 className="font-black" style={{
             margin: 0
-          }}>Hey, I&apos;m Salim</h1>
+          }}>Salim Boujaddi</h1>
         </div>
         <p>Student based in France with interest in Mathematics and CS. <br/>
           I’m currently a student at Sorbonne université. You can connect with me on <a target="_blank" href="https://www.linkedin.com/in/salim-boujaddi">Linkedin</a>.<br/><br/>Open to all opportunities.</p>
