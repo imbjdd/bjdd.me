@@ -72,32 +72,32 @@ const to_read = oui.to_read
 
 return (
 <>
-<section className="header pouet">
+  <section className="header pouet">
     <Navbar />
     <h1 className="font-black">/Reading_List</h1>
-</section>
+  </section>
 
 
-<div className="main top readinglist">
-<h2 className="font-bold">Books I want to read</h2>
-<ul className="border-black">
-{to_read.map((book: Book) => (
-<li key={book.id}><i>{book.title}</i>, {book.author}</li>
-))}
-</ul>
+  <div className="main top readinglist mb-8">
+    <h2 className="font-bold">Books I want to read</h2>
+    <ul className="border-black">
+      {to_read.map((book: Book) => (
+       <li key={book.id}><i>{book.title}</i>, {book.author}</li>
+      ))}
+   </ul>
 
-<h2 className="font-bold">Books I&apos;ve read</h2>
+    <h2 className="font-bold">Books I&apos;ve read</h2>
 
-{years.map((year:number) => (
-<>
-<h3>{year}</h3>
-<ul className="border-black">
-{data[year.toString()].map((book: Book) => (
-<li key={book.id}><i>{book.title}</i>, {book.author}</li>
-))}
-</ul>
-</>
-))}
-</div>
+    {years.map((year:number) => (
+      <>
+        <h3>{year}</h3>
+        <ul className="border-black">
+          {data[year.toString()].map((book: Book) => (
+            <li key={book.id}><i>{book.title}</i>, {book.author}</li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </div>
 </>
 )}
