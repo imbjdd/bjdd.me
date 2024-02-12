@@ -21,7 +21,7 @@ return (
 <p>I&apos;m working on my projects.</p>
 
 <h3>Study</h3>
-<p>I'm studying mathematics and CS.</p>
+<p>I&apos;m studying mathematics and CS.</p>
 
 <h3>Reading</h3>
 <p>I am reading <i>Algebra</i> written by Serge Lang.</p>
