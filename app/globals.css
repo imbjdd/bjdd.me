@@ -27,7 +27,7 @@
   padding-top: calc(47vh * 100 / 900);
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .pouet {
     padding: 0 calc(205vw * 100 / 1440);
     padding-top: calc(47vh * 100 / 900);
@@ -37,7 +37,7 @@
    padding: 0 16px;
 }
 
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .top {
      padding: 0 calc(205vw * 100 / 1440);
      padding-top: calc(47vh * 100 / 900);
@@ -48,7 +48,7 @@
    height: fit-content;
    overflow: hidden;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .home {
      height: 100vh;
   }
@@ -62,7 +62,7 @@
 .grow {
   flex-grow: 1;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   nav {
     display: flex;
  }
@@ -71,7 +71,7 @@
    position: relative;
    text-align: center;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    nav .logo {
   }
 }
@@ -90,7 +90,7 @@
    padding: 0px;
    gap: calc(26vw * 100 / 1440);
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    nav .links {
   }
 }
@@ -98,7 +98,7 @@
    width: 100%;
    position: relative;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero {
      height: 100%;
   }
@@ -106,7 +106,7 @@
  .hero .content {
    width: 100%;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content {
      margin: 0;
      position: absolute;
@@ -126,12 +126,12 @@
  .hero .content .picture img {
    border-radius: 5px;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content .picture {
      margin: 0;
       }
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content .main-c {
      padding-left: calc(60vw * 100/1440);
      height: fit-content;
@@ -147,7 +147,7 @@
    vertical-align: middle;
    width: 40px;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content .main-c img {
      width: calc(64vw * 100 / 1440);
   }
@@ -160,7 +160,7 @@
    font-weight: 400;
    padding-top: 10px;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content .main-c .cta {
      display: flex;
      flex-direction: row;
@@ -172,7 +172,7 @@
    width: 100%;
    height: 40px;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content .main-c .cta button {
      padding: calc(15vh * 100/900) calc(75vw * 100/1440);
      height: auto;
@@ -188,7 +188,7 @@
    border: 1px solid #303d38;
    background-color: #fff;
 }
- @media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 1024px) {
    .hero .content .main-c .cta .second {
      margin-top: 0;
      margin-bottom: 0;
@@ -198,7 +198,7 @@
  .main {
    padding-bottom: calc(47vh * 100 / 900);
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .main {
     padding: 0 calc(205vw * 100 / 1440)
   }
@@ -250,7 +250,7 @@ h1 {
 .pouet h1 {
   margin: 20px 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .pouet h1 {
     margin: 50px 0;
  }
