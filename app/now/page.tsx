@@ -15,16 +15,16 @@ return (
 <h2 className="font-bold">
     What I&apos;m doing now
 </h2>
-<p>I live in Paris 75005, France.</p>
+<p>I live in France in the Paris suburbs.</p>
 
 <h3 className="font-medium">Work</h3>
-<p>I&apos;m working on my start-up and learning React Native.</p>
+<p>I&apos;m working on my projects.</p>
 
 <h3>Study</h3>
-<p>I study mathematics and CS.</p>
+<p>I'm studying mathematics and CS.</p>
 
 <h3>Reading</h3>
-<p>I am reading <u>Histoire de France</u> written by Jacques Bainville.</p>
+<p>I am reading <i>Algebra</i> written by Serge Lang.</p>
 
 
 <p>Inspired by <a href="https://nownownow.com/">Nownownow</a>.</p>
